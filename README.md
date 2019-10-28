@@ -1,5 +1,8 @@
 # ThinkCMF_getshell 框架上的任意内容包含漏洞
 
+远程攻击者在无需任何权限情况下，通过构造特定的请求包即可在远程服务器上执行任意代码。
+
+
 ![](./ThinkCMF_getshell.jpg)
 
 ## python usage:
@@ -44,4 +47,6 @@ www:x:1000:1000::/home/www:/sbin/nologin
 mysql:x:1001:1001::/home/mysql:/sbin/nologin
 
 ```
-
+## 修复方法
+将 
+`HomebaseController.class.php` 和 `AdminbaseController.class.php` 类中 `display` 和 `fetch` 函数的修饰符改为 `protected`

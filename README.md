@@ -2,7 +2,7 @@
 
 远程攻击者在无需任何权限情况下，通过构造特定的请求包即可在远程服务器上执行任意代码。
 
-
+![](./fofa.jpg)
 ![](./ThinkCMF_getshell.jpg)
 
 ## python usage:
